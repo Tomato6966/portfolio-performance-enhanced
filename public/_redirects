@@ -1,0 +1,6 @@
+# API routes redirect to edge functions
+/api/yahoo-proxy  /.netlify/edge-functions/yahoo-proxy  200
+/api/*            /.netlify/edge-functions/cors-handler  200
+
+# Client-side routing fallback
+/*    /index.html   200

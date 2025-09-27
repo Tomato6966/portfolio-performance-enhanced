@@ -1,0 +1,57 @@
+[build]
+  # Build command
+  command = "npm run build"
+
+  # Directory with the static files (Next.js export output)
+  publish = "out"
+
+  # Directory to look for edge functions
+  edge_functions = "netlify/edge-functions"
+
+# Edge Functions configuration
+[[edge_functions]]
+  function = "yahoo-proxy"
+  path = "/api/yahoo-proxy"
+
+[[edge_functions]]
+  function = "cors-handler"
+  path = "/api/*"
+
+# Headers for security and caching
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Cache static assets
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Handle client-side routing (SPA)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  conditions = {Role = ["*"]}
+  # Only redirect if it's not a file that exists
+  force = false
+
+# Environment variables (you can set these in Netlify UI instead)
+[build.environment]
+  NODE_VERSION = "23"
+  NPM_VERSION = "10"
