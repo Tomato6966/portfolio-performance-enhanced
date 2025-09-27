@@ -14,12 +14,31 @@ interface StoredPortfolioData {
   selectedPortfolioIds: string[];
 }
 
+interface SerializableTransaction {
+  id: string;
+  date: string; // ISO string instead of Date
+  type: 'buy' | 'sell' | 'dividend' | 'interest' | 'deposit' | 'withdrawal' | 'fee' | 'tax';
+  amount: number;
+  currency: string;
+  shares?: number;
+  pricePerShare?: number;
+  fees: number;
+  taxes: number;
+  asset?: {
+    isin?: string;
+    wkn?: string;
+    symbol?: string;
+    name: string;
+  };
+  notes?: string;
+}
+
 interface SerializablePortfolio {
   id: string;
   name: string;
   fileName?: string;
-  transactions: ProcessedTransaction[];
-  cashTransactions: ProcessedTransaction[];
+  transactions: SerializableTransaction[];
+  cashTransactions: SerializableTransaction[];
   startDate: string;
   endDate: string;
 }
@@ -35,11 +54,11 @@ const serializePortfolio = (portfolio: Portfolio): SerializablePortfolio => {
     transactions: portfolio.data.transactions.map(t => ({
       ...t,
       date: t.date.toISOString()
-    })) as ProcessedTransaction[],
+    })) as SerializableTransaction[],
     cashTransactions: portfolio.data.cashTransactions.map(t => ({
       ...t,
       date: t.date.toISOString()
-    })) as ProcessedTransaction[],
+    })) as SerializableTransaction[],
     startDate: portfolio.data.startDate.toISOString(),
     endDate: portfolio.data.endDate.toISOString()
   };
