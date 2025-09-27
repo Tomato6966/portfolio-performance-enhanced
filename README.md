@@ -11,7 +11,7 @@
 
 *Transform your Portfolio Performance CSV exports into beautiful, interactive financial insights*
 
-[🚀 Live Demo](#) • [📊 Features](#features) • [🛠️ Installation](#installation) • [📱 Usage](#usage)
+[🚀 Live Demo](#Images) • [📊 Features](#features) • [🛠️ Installation](#installation) • [📱 Usage](#usage)
 
 </div>
 
@@ -55,6 +55,12 @@ Portfolio Performance Enhanced is a modern, privacy-focused web application that
 - **Yahoo Finance API**: Automatic symbol resolution and historical price fetching
 - **Real-time Updates**: Live asset price updates with fallback mechanisms
 - **Data Validation**: Comprehensive error handling and data quality checks
+
+## See More Images:
+
+[Click here to see all Images](#Images)
+
+https://github.com/user-attachments/assets/c2063f71-8d30-4e2c-aeb3-0745fbba9c45
 
 ## 🛠️ Installation
 
@@ -239,9 +245,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 🐛 **Bug Reports**: [Open an issue](https://github.com/yourusername/portfolio-performance-enhanced/issues)
-- 💡 **Feature Requests**: [Start a discussion](https://github.com/yourusername/portfolio-performance-enhanced/discussions)
-- 📧 **Email**: [your-email@example.com](mailto:your-email@example.com)
+- 🐛 **Bug Reports**: [Open an issue](https://github.com/tomato6966/portfolio-performance-enhanced/issues)
+- 💡 **Feature Requests**: [Start a discussion](https://github.com/tomato6966/portfolio-performance-enhanced/discussions)
 
 ---
 
@@ -249,6 +254,26 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **⭐ Star this repository if you find it helpful!**
 
-Made with ❤️ by [Your Name](https://github.com/yourusername)
+# Images
+
+https://github.com/user-attachments/assets/c2063f71-8d30-4e2c-aeb3-0745fbba9c45
+
+<img width="2393" height="1348" alt="image" src="https://github.com/user-attachments/assets/9a4dde90-5261-4ad3-ab44-6286d9aa0f98" />
+
+<img width="2386" height="1354" alt="image" src="https://github.com/user-attachments/assets/c632abfe-ca70-4a2b-93a0-1a39fff79302" />
+
+<img width="2396" height="1353" alt="image" src="https://github.com/user-attachments/assets/848e6f2e-5f8b-4446-b03f-f646b24b7db2" />
+
+<img width="2391" height="1349" alt="image" src="https://github.com/user-attachments/assets/3db45d44-e562-4b88-a080-764d1fde0c1b" />
+
+<img width="2390" height="1345" alt="image" src="https://github.com/user-attachments/assets/7b65d045-b055-40e2-9623-1a6594eeaece" />
+
+<img width="2401" height="1352" alt="image" src="https://github.com/user-attachments/assets/4c9c062c-b56d-4fc9-88ce-3254f321b447" />
+
+<img width="2384" height="1343" alt="image" src="https://github.com/user-attachments/assets/5565ec98-6733-4eae-874a-7b2b954ed8fb" />
+
+<img width="2384" height="1347" alt="image" src="https://github.com/user-attachments/assets/3812ba9d-5e4d-41d5-bb19-ec4021be90cc" />
+
+Made with ❤️ by [Tomato6966 (@Chrissy8283)](https://github.com/tomato6966)
 
 </div>
